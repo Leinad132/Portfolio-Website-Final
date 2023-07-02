@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Daniel's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--making the navigation bar-->
+    <nav class="navbar">
+      <ul class="link-group">
+        <li class="link active"><a href="#">home</a></li>
+        <li class="link"><a href="#projects">projects</a></li>
+        <li class="link"><a href="#about">about</a></li>
+        <li class="link"><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- making the home section-->
+    <section class="home-section active">
+      <h1 class="home-heading">Hello, I'm <br> Daniel</h1>
+      <img src="Daniel's picture.jpeg" class="home-img" alt="picture">
+      <h2 class="welcomingtext"><br>Welcome to my website</h2>
+    </section>
+
+    <!-- making the projects section-->
+    <section class="projects-section" id="projects">
+      <h1 class="project-heading">These are some of my projects</h1>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="Sample video game picture.jpg" class="project-img" alt="">
+          <div class="project-content">
+            <h1 class="project-title">Basic python videogame</h1>
+            <p class="project-info">
+              This is a basic racing game, where you have to dodge obstecles built using python
+            </p>
+            <div class="project-button-group">
+              <button class="project-button github">github repo</button>
+              <button class="project-button live">see live</button>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </section>
+
+  <!--making the about section-->
+    <section class="about-section active" id="about">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="img/home.png" class="about-img" alt="">
+            <button class="download-cv-button">downlaod cv</button>
+        </div>
+        <p class="about-info">Hi there, I'm Daniel! I'm currently a college student studying computer science, and I'm passionate about all things tech-related.Ever since I was a kid, I've been fascinated by computers and how they work. I love tinkering with software and hardware, and I'm always on the lookout for new tools and technologies to learn about.
+            When I'm not studying or working on coding projects, you can usually find me playing video games or watching sci-fi movies. I'm also a big fan of hiking and spending time outdoors, especially when I need to clear my head or get some exercise.
+            Overall, I'm just a regular guy with a love of computers and a desire to make a positive impact in the world. Whether that means developing new software applications or simply helping others learn more about technology, I'm always up for a challenge.</p>
+    </div>
+</section>
+
+
+
+<!--making the contact section-->
+<section class="contact-section active" id="contact">
+    <form class="contact-form">
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+        <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+        <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+        <button type="submit" class="form-submit-button">submit</button>
+    </form>
+    
+</section>
+
+
+  </body>
+</html>
